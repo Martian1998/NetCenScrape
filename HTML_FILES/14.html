@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head><title>Jobs - Mobile Games</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" /> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<!--script src="js/jquery.lint.js" type="text/javascript" charset="utf-8"></script-->
+		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="ajaxsbmt.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+			<link href="bootstrap.css" rel="stylesheet"> 
+		<link href="bootstrap-responsive.css" rel="stylesheet"> 
+	
+<script src="bootstrap-modal.js"></script>
+<script src="bootstrap-transition.js"></script>
+<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+<!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+<!-- Shim to make HTML5 elements usable in older Internet Explorer versions -->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<script type="text/javascript">
+function formSubmit()
+{
+
+	$("#hname").val ($("#name").val ());
+	$("#hcgpa").val ($("#cgpa").val ());
+	$("#huni").val ($("#uni").val ());
+	$("#recaptcha_response_field1").val ($("#recaptcha_challenge_field").val ());
+	$("#hemail").val ($("#email").val ());
+	$("#hposition").val ($("#position").val ());
+	$("#hmessage").val ($("#message").val ());
+	$("#hbehance").val ($("#behance").val ());
+	if(document.getElementsByClassName("attachfile") !=null)
+	{
+		$("#hfilez").val("");
+		var len = document.getElementsByClassName("attachfile").length;
+		for(i=0;i<len;i++)
+		{
+			$("#hfilez").val ($("#hfilez").val() + document.getElementsByClassName("attachfile")[i].innerHTML+",");
+		}
+	}
+	$('#reasons10').modal('hide');
+	$('#feedback').modal('show');
+	xmlhttpPost('sendcv.php', 'frm1', 'feedbackmsg', 'Please Wait...'); 
+	$("#name").val ("");
+	$("#email").val ("");
+	$("#position").val ("");
+	$("#message").val ("");
+	$("#recaptcha_challenge_field").val ("");
+	$("#cgpa").val ("");
+	$("#uni").val ("");
+	$("#behance").val ("");
+	$("#recaptcha_response_field").val ("Refresh Captcha!");
+}
+</script>
+
+	<script language="javascript">
+
+    $(document).ready(function() {
+            
+		
+		//This method initialises the modal popup
+        $(".applybut").click(function() {
+                $('#reasons10').modal('show')
+        });
+		
+		
+		 
+    });
+	
+</script>
+<style>
+p
+{
+	margin-bottom:none !important;
+}
+</style>
+<script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-25658717-1']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+<script type='text/javascript'> var _springMetq = _springMetq || []; _springMetq.push(['id', '0db0a62ffc']); (  function(){   var s = document.createElement('script');   s.type = 'text/javascript';   s.async = true;   s.src = ('https:' == document.location.protocol ? 'https://d3rmnwi2tssrfx.cloudfront.net/a.js' : 'http://static.springmetrics.com/a.js');   var x = document.getElementsByTagName('script')[0];   x.parentNode.insertBefore(s, x);  } )();</script>
+<meta property="og:image" content="http://www.carameltechstudios.com/logo_social.png"/> 
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<div class="mtop">
+				&nbsp;
+	</div>
+<div class="heehaw">
+	<div class="htop">
+			
+			<a href="http://carameltechstudios.com/">
+			<div class="ctech">
+				&nbsp;
+			</div></a>
+			<a href="careers.php"><div class="applynow">
+				&nbsp;
+			</div></a>
+	</div>	<table class="main" >
+	<tr height="59px">
+	<td valign="top" colspan="2">
+		
+				<div class="nav">  
+										<a href="contact.php">Contact</a>
+					<a href="news.php">News</a><a href="http://forum.carameltechstudios.com/" target ="_blank">Community</a>					<a href="careers.php">Careers</a>
+					<a href="expertise.php">Expertise</a>
+					<a href="about.php">About</a>
+					<a href="index.php">Home</a>				</div>
+	</td>
+	</tr>
+	<tr>
+	<td valign="top" class="leftcoljob" >
+	
+		<div class="aboutus">
+			<div class="mheading aboutusheading">
+				Jobs!
+			</div>
+			<div class="jobt">
+				&nbsp;
+				
+			</div>
+			<div class="jobtb">
+							
+<b style="font-weight:bold">Position</b><br/>
+UI/UX Designer<hr style="color:#f2f2f2;background-color:#f2f2f2;height:1px;border:none;" />
+
+<b style="font-weight:bold">Job Location</b><br/> Lahore/Remotely<hr style="color:#f2f2f2;background-color:#f2f2f2;height:1px;border:none;" />
+
+<b style="font-weight:bold">Career Level</b><br/>
+
+ 1 - 4 years of experience<hr style="color:#f2f2f2;background-color:#f2f2f2;height:1px;border:none;" />
+
+<b style="font-weight:bold">Job Description</b><br/>
+
+ 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+
+<div>The Caramel Tech Studios design team is responsible for delivering the highest quality user experience solutions for mobile apps and games.
+</div>
+<div>&nbsp;
+</div>
+<div>To help us stay there we need you! We are currently looking for a User Interface/User Experience designer with talent and flair, an eye for detail, and a passion for the digital space.
+</div>
+<div><br />
+</div>
+<div>Responsibilities include:
+</div>
+<div>
+<ul>
+ <li>Working with the design team for user experience planning and development.</li>
+ <li>Designing mock-ups/iterations using Photoshop, Illustrator, and Flash.</li>
+ <li>Generating crisp, innovative, and elegant design solutions for complex mobile games.</li>
+ <li>Responsible for execution of strong interaction design and visual design principles.</li>
+ <li>Lead rapid iterations and testing on a variety of ideas using wireframes and sketches to fully designed compositions.</li>
+ <li>Work closely with the Art Lead, Product Designer and Producer to lead the strategic vision of the project.</li>
+ <li>Partner with engineers to collaborate and iterate in fast-paced design-build cycles.</li>
+ <li>Facilitate dialog around end-user requirements and business requirements.</li>
+ <li>Help build a dynamic, creative environment in which you can design while also motivating and mentoring other team members.</li>
+ <li>Researching interaction design trends.</li>
+</ul>
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<hr style="color:#f2f2f2;background-color:#f2f2f2;height:1px;border:none;" />
+
+<b style="font-weight:bold">Required Skills</b><br/>
+
+ 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+
+<div>
+<ul>
+ <li>1-4 years of professional design/user experience for mobile applications, games, software, which leverage emergent technologies, consumer electronics and/or mobile devices technologies, consumer electronics and/or mobile devices.</li>
+ <li>Advanced working knowledge of Flash, Photoshop, Illustrator, InDesign, Fireworks, and associated design tools.</li>
+ <li>Make a point to understand how our product's audience interacts with its services, and make use of this knowledge in the development of the best possible user experiences.</li>
+ <li>Thorough understanding of user experience design for mobile social applications and games.</li>
+ <li>Excellent interpersonal skills and the ability to communicate effectively throughout.</li>
+ <li>Proven ability to work with cross-functional teams and successfully launch new products.</li>
+ <li>Extensive experience with user interface design patterns and standard UCD methodologies across multiple platforms with a strong focus on mobile.</li>
+ <li>Passion and understanding of games, particularly mobile games.</li>
+</ul>
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<hr style="color:#f2f2f2;background-color:#f2f2f2;height:1px;border:none;" />
+
+<b style="font-weight:bold">Preference will be given to candidates who have:</b><br/>
+
+ 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+
+<ul>
+ <li>Experience working on shipped games and/or mobile apps (big plus).</li>
+ <li>Bachelor's and/or Master's Degree in Interaction Design, New Media Design, Industrial Design, HCI, Human Factors/Ergonomics or related field.</li>
+ <li>Some knowledge of 3D Modeling, rendering and animation.</li>
+</ul>		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<hr style="color:#f2f2f2;background-color:#f2f2f2;height:1px;border:none;" />
+
+<b style="font-weight:bold">Salary Package</b><br/>
+
+We offer highly competitive and lucrative packages that could vary depending on the educational background, work experience, as well as the candidate’s performance in the interview.<hr style="color:#f2f2f2;background-color:#f2f2f2;height:1px;border:none;" />
+	
+<b style="font-weight:bold">Deadline</b><br/>	
+ ASAP			
+			</div>
+			<div class="jobb">
+				
+			</div>
+		</div>
+	</td>
+	<td valign="top">
+		
+		<div class="jobrt">
+		
+		</div>
+		<div class="jobrtb">
+				<table>
+			<tr>
+			<td>
+<div id="reasons10" class="modal hide fade in" style="display: none; width: 700px; top: 2%;margin: 0 auto;left: calc(50% - 350px);">
+            <div class="modal-header" style="border-bottom: none !important;">
+              <a class="close" data-dismiss="modal">x</a>
+				<h3>Job Application Form</h3>
+				<div class="smallprint" style="color: #A3A3A3">
+						<span style="color:red">*</span> Required fields; <span style="color:red">**</span> Required for all candidates except Artists; <span style="color:red">***</span> Only required for Artists
+				</div>
+            </div>
+            <div class="modal-body">
+			<div class="mailfbox" style="background-color:#f2f2f2;padding-left:10px;">  
+		
+			<table width="100%"  class="mailform" id="mdata" style="background-color:#f2f2f2;"> 
+			<tr>
+				<td>
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+				<tr>
+					<td valign="top" class="emailt"> 
+						Name <span style="color:red">*</span>
+					</td>
+					<td valign="top" class="emailf">
+						<input id="name" type="text" />	
+					</td>				
+				</tr>
+				<tr>
+					<td valign="top" class="emailt"> 
+						Email <span style="color:red">*</span>
+					</td>
+					<td valign="top" class="emailf">
+						<input id="email" type="text" />	
+						
+					</td>				
+				</tr>
+				<tr>
+					<td valign="top" class="emailt"> 
+						Position <span style="color:red">*</span>
+					</td>
+					<td valign="top" class="emailf">
+						<input id="position" type="text" value="UI/UX Designer"/>	
+					
+					</td>				
+				</tr>
+				<tr>
+					<td valign="top" class="emailt"> 
+						Cover Letter <span style="color: #BDBABA; font-size: 10px">(Optional)</span>
+					</td>
+					<td valign="top" class="emailf">
+						<textarea id="message" rows="4" cols="100" style="width:95%; resize: vertical;"></textarea>
+					
+					</td>				
+				</tr>
+				<tr>
+					<td valign="bottom" class="emailt" style="padding-bottom:8px;"> 
+					CGPA <span style="color:red">**</span> <span style="color: #BDBABA; font-size: 10px">(Bachelors)</span>
+					</td>
+					<td valign="top" class="emailf">
+					 <input id="cgpa" type="text" value="" placeholder="(Required for all candidates except Artists)"/>
+
+					</td>				
+				</tr>
+				
+				<tr>
+					<td valign="bottom" class="emailt" style="padding-bottom:8px;"> 
+					Portfolio Link <span style="color:red">***</span>
+					</td>
+					<td valign="top" class="emailf">
+					 <input id="behance" type="text" value="" placeholder="(Behance or Vimeo. Only required for Artists)"/>
+
+					</td>				
+				</tr>
+				<tr>
+					<td valign="bottom" class="emailt" style="padding-bottom:8px;"> 
+					University <span style="color:red">*</span> <span style="color: #BDBABA; font-size: 10px">(Bachelors)</span> 
+					</td>
+					<td valign="top" class="emailf">
+					 <input id="uni" type="text" value=""/>
+
+					</td>				
+				</tr>
+				<tr>
+					<td valign="top" class="emailt"> 
+						CV/Portfolio
+					</td>
+					<td valign="top" class="emails" style="font-weight: normal;">
+						
+						Allowed types: images, pdf, doc, docx, zip, rar
+						<br/>(Individual file size should not exceed 25Mb)<br/><br/>
+						<form id="fileupload" action="server/php/" method="POST" enctype="multipart/form-data">
+        <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+        <div class="row fileupload-buttonbar" style="margin-left:0px">
+            <div class="span7">
+                <!-- The fileinput-button span is used to style the file input field as button -->
+                <span class="btn btn-success fileinput-button" style="text-align:center;">
+                    Add file(s)
+                    <input type="file" name="files[]" multiple>
+                </span>
+                <button type="button" class="btn btn-danger delete" style="text-align:center;">
+                    <span>Delete</span>
+                </button>
+                Select All <input type="checkbox" class="toggle">
+            </div>
+            <!-- The global progress information -->
+            <div class="span5 fileupload-progress fade">
+                <!-- The global progress bar -->
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="bar" style="width:0%;"></div>
+                </div>
+                <!-- The extended global progress information -->
+                <div class="progress-extended">&nbsp;</div>
+            </div>
+        </div>
+        <!-- The loading indicator is shown during file processing -->
+        <div class="fileupload-loading"></div>
+        <br>
+        <!-- The table listing the files available for upload/download -->
+        <table role="presentation" class="table table-striped"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
+    </form> 
+	
+<!-- The template to display files available for upload -->
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td class="preview"><span class="fade"></span></td>
+        <td class="name"><span>{%=file.name%}</span></td>
+        <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+        {% if (file.error) { %}
+            <td class="error" colspan="2"><span class="label label-important">{%=locale.fileupload.error%}</span> {%=locale.fileupload.errors[file.error] || file.error%}</td>
+        {% } else if (o.files.valid && !i) { %}
+            <td>
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="bar" style="width:0%;"></div></div>
+            </td>
+            <td class="start">{% if (!o.options.autoUpload) { %}
+                <button class="btn btn-primary">
+                    <i class="icon-upload icon-white"></i>
+                    <span>{%=locale.fileupload.start%}</span>
+                </button>
+            {% } %}</td>
+        {% } else { %}
+            <td colspan="2"></td>
+        {% } %}
+        <td class="cancel">{% if (!i) { %}
+            <button class="btn btn-warning">
+                <i class="icon-ban-circle icon-white"></i>
+                <span>{%=locale.fileupload.cancel%}</span>
+            </button>
+        {% } %}</td>
+    </tr>
+{% } %}
+</script>
+<!-- The template to display files available for download -->
+<script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download fade">
+        {% if (file.error) { %}
+            <td></td>
+            <td class="name"><span>{%=file.name%}</span></td>
+            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+            <td class="error" colspan="2"><span class="label label-important">{%=locale.fileupload.error%}</span> {%=locale.fileupload.errors[file.error] || file.error%}</td>
+        {% } else { %}
+            <td class="preview">{% if (file.thumbnail_url) { %}
+                <a href="{%=file.url%}" title="{%=file.name%}" rel="gallery" download="{%=file.name%}"><img src="{%=file.thumbnail_url%}"></a>
+            {% } %}</td>
+            <td class="name" id="attachfile">
+                <a href="{%=file.url%}" class="attachfile" title="{%=file.name%}" rel="{%=file.thumbnail_url&&'gallery'%}" download="{%=file.name%}">{%=file.name%}</a>
+            </td>
+            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
+            <td colspan="2"></td>
+        {% } %}
+        <td class="delete">
+            <button class="btn btn-danger" data-type="{%=file.delete_type%}" data-url="{%=file.delete_url%}"  style="text-align:center;">
+                
+                <span>{%=locale.fileupload.destroy%}</span>
+            </button>
+             <input style="margin-left:6px;" type="checkbox" name="delete" value="1">
+        </td>
+    </tr>
+{% } %}
+</script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="js/bs/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="js/bs/load-image.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="js/bs/canvas-to-blob.min.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+<script src="js/bs/bootstrap.min.js"></script>
+<!-- blueimp Gallery script -->
+<script src="js/bs/jquery.blueimp-gallery.min.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="js/jquery.fileupload.js"></script>
+<!-- The File Upload file processing plugin -->
+<script src="js/jquery.fileupload-fp.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="js/jquery.fileupload-ui.js"></script>
+<!-- The localization script -->
+<script src="js/locale.js"></script>
+<!-- The main application script -->
+<script src="js/main.js"></script>
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE8+ -->
+<!--[if gte IE 8]><script src="js/cors/jquery.xdr-transport.js"></script><![endif]-->
+						
+					</td>				
+				</tr>
+				
+				
+			</table>
+		</div>
+            </div>
+            <div class="modal-footer">
+			<script type="text/javascript">
+ var RecaptchaOptions = {
+    theme : 'custom',
+    custom_theme_widget: 'recaptcha_widget'
+ };
+ </script>
+			<form id="frm1" name="frm1" method="post" action="sendcv.php">
+			
+							<div class="g-recaptcha" data-sitekey="6LemWEUUAAAAALPPbLyctvk-3HcjQoPbEiYmKusa"></div>
+							<a class="submitbut" onclick="formSubmit()" id="submit" style="float:left"></a>
+<!--
+							<div class="clear"><a href="javascript:void(0);">Clear</a>
+							</div>
+							
+							-->
+							<input type="hidden" id="recaptcha_response_field1" name="recaptcha_response_field1"  value=""/>
+							<input type="hidden" id="recaptcha_challenge_field1" name="recaptcha_challenge_field1"  value=""/>
+							<input type="hidden" id="hname"  name="hname" value=""/>
+							<input type="hidden" id="hemail" name="hemail" value=""/>
+							<input type="hidden" id="hposition"  name="hposition" value=""/>
+							<input type="hidden" id="hcgpa"  name="hcgpa" value=""/>
+							<input type="hidden" id="hmessage" name="hmessage" value=""/>
+							<input type="hidden" id="hbehance" name="hbehance" value=""/>
+							<input type="hidden" id="hfilez" name="hfilez" value=""/>
+							<input type="hidden" id="huni" name="huni" value=""/>
+
+		</form>
+            </div>
+          </div>
+		  
+		  
+				<div id="feedback" class="modal hide fade in" style="display: none;  ">
+            <div class="modal-header" style="border-bottom: none !important;">
+              <a class="close" data-dismiss="modal">x</a>
+			  <h3><br/></h3>
+             
+            </div>
+            <div class="modal-body">
+				<div id="feedbackmsg" class="feedbackmsg">
+				</div>
+
+			</div>
+            <div class="modal-footer">
+              <a href="#" class="btn" data-dismiss="modal">Close</a>
+            </div>
+          </div>	
+				<a class="applybut"></a>
+			</td> 
+			<td style="text-align: left; padding-left:6px">OR apply via email on:<br/>
+<b style="font-weight:bold"><a href='mailto:careers@carameltechstudios.com'>careers@carameltechstudios.com</a></b><br/>
+Important: Please mention the job title
+in the subject field of your email.
+			</td>
+			</tr>
+			</table>
+		</div>
+		<div class="jobrb">
+		</div>
+		
+		<div class="jobrt">
+		
+		</div>
+		<div class="jobrtb">
+				<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.carameltechstudios.com%2Fjobs.php%3Fid%3D13&amp;send=false&amp;layout=standard&amp;width=380&amp;show_faces=true&amp;action=recommend&amp;colorscheme=light&amp;font&amp;height=25&amp;appId=340048876088035" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:380px; height:25px;" allowTransparency="true"></iframe>
+		</div>
+		<div class="jobrb">
+		</div>
+		
+		<div class="jobrt">
+		
+		</div>
+		<div class="jobrtb">
+				<img src="img/Large/10.jpg" />
+				<div class="mheading aboutusheading" style="margin-left:9px; margin-top:3px;">
+				Life @ CaramelTech
+				</div>
+				 <p >
+				Caramel Tech Studios (Pvt.) Limited is a young and dynamic company working with some of the best game studios around the world and on their leading products. We are developing games and apps for Mobile as well as Facebook platforms. We offer a fast paced challenging environment to learn and grow.
+				</p>
+		</div>
+		<div class="jobrb">
+		</div>
+	</td>
+	</tr>
+	</table>
+	
+	<div class="mfooter">
+			<a href="index.php">Home</a> <a href="about.php">About</a> <a href="expertise.php">Expertise</a> <a href="careers.php">Careers</a> <a href="news.php">News</a> <a href="contact.php">Contact</a> <a href="http://forum.carameltechstudios.com/" target ="_blank">Community</a>
+			<br/>
+			<br/>
+	Caramel Tech Studios (Pvt.) Limited. © 2019		
+	</div></body>
+</html>
